@@ -120,18 +120,18 @@ class PopularRestaurants extends Component {
         </ul>
         <div className="pagination">
           <button
-            data-testid="pagination-left-button"
+            testid="pagination-left-button"
             className="button"
             type="button"
             onClick={this.onClickLeftArrow}
           >
             <RiArrowDropLeftLine className="arrow" />
           </button>
-          <h1 data-testid="active-page-number" className="page-numbers">
+          <h1 testid="active-page-number" className="page-numbers">
             {activePage} of 20
           </h1>
           <button
-            data-testid="pagination-right-button"
+            testid="pagination-right-button"
             className="button"
             type="button"
             onClick={this.onClickRightArrow}
@@ -144,7 +144,7 @@ class PopularRestaurants extends Component {
   }
 
   renderLoader = () => (
-    <div data-testid="restaurants-list-loader" className="carousel-loader">
+    <div testid="restaurants-list-loader" className="carousel-loader">
       <Loader type="TailSpin" color="#F7931E" height={50} width={50} />
     </div>
   )

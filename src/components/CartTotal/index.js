@@ -21,7 +21,7 @@ const CartTotal = () => (
           <div className="cart-summary-container">
             <h1 className="order-total-value">Order Total:</h1>
             <div className="total-container">
-              <p data-testid="total-price" className="total">
+              <p testid="total-price" className="total">
                 <FaRupeeSign /> {totalOrderCost}
               </p>
               <Link to="/payment">

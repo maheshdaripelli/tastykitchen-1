@@ -81,10 +81,7 @@ class RestaurantDetails extends Component {
       <>
         <Header activeTab="HOME" />
         {isLoading ? (
-          <div
-            data-testid="restaurants-details-loader"
-            className="carousel-loader"
-          >
+          <div testid="restaurants-details-loader" className="carousel-loader">
             <Loader type="TailSpin" color="#F7931E" height={50} width={50} />
           </div>
         ) : (

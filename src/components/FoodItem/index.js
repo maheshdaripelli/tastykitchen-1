@@ -40,7 +40,7 @@ class FoodItem extends Component {
           }
 
           return (
-            <li data-testid="foodItem" className="food-item">
+            <li testid="foodItem" className="food-item">
               <img src={imageUrl} alt="food-item" className="food-item-image" />
               <div>
                 <h1 className="food-name">{name}</h1>
@@ -64,7 +64,7 @@ class FoodItem extends Component {
                 ) : (
                   <div className="cart-quantity-container">
                     <button
-                      data-testid="decrement-count"
+                      testid="decrement-count"
                       onClick={onDecreaseQuantity}
                       type="button"
                       className="quantity-controller-button"
@@ -75,11 +75,11 @@ class FoodItem extends Component {
                         size={12}
                       />
                     </button>
-                    <p data-testid="active-count" className="cart-quantity">
+                    <p testid="active-count" className="cart-quantity">
                       {quantity}
                     </p>
                     <button
-                      data-testid="increment-count"
+                      testid="increment-count"
                       onClick={onAddQuantity}
                       type="button"
                       className="quantity-controller-button"

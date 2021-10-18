@@ -29,18 +29,18 @@ const CartItem = props => (
             </div>
             <div className="cart-quantity-container">
               <button
-                data-testid="decrement-quantity"
+                testid="decrement-quantity"
                 onClick={onDecreaseQuantity}
                 type="button"
                 className="quantity-controller-button"
               >
                 <BsDashSquare color="#52606D" size={12} />
               </button>
-              <p data-testid="item-quantity" className="cart-quantity">
+              <p testid="item-quantity" className="cart-quantity">
                 {quantity}
               </p>
               <button
-                data-testid="increment-quantity"
+                testid="increment-quantity"
                 onClick={onAddQuantity}
                 type="button"
                 className="quantity-controller-button"
